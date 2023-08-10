@@ -10,7 +10,7 @@
  *
  *  in c if your program attemps to access a memory location
  *
- * that does not hane the permission to access
+ * that does not have the permission to access
  *
  *  an error segmentation fault will appear to you
  *
