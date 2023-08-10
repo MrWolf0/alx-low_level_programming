@@ -12,7 +12,7 @@
  *
  * that does not have the permission to access
  *
- *  an error segmentation fault will appear to you
+ *  an error segmentation fault will appear to screen
  *
  * although no error in code writing
  */
