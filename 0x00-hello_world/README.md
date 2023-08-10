@@ -1,1 +1,1 @@
-wolf start c programming
+wolf starting programming in c
