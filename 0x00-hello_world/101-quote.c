@@ -17,7 +17,7 @@
  */
 int main(void)
 {
-char test[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+char test[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 int buffer =  strlen(test);
 
 write(1, test, buffer);
