@@ -17,11 +17,10 @@
  */
 int main(void)
 {
-char str_test[] = "and that piece of art is useful\" -"
-" Dora Korpar, 2015-10-19";
-int buffer =  strlen(str_test);
+char test[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+int buffer =  strlen(test);
 
-write(1, str_test, buffer);
+write(1, test, buffer);
 
 return (1);
 }
