@@ -8,11 +8,13 @@
  */
 int main(void)
 {
-/* a netsed for loop program  need 2 counters */
+/* a nssted for loop program  need 2 counters */
 	int counter_1, counter_2;
-/* the frist loop to print values from 0 to 9 and to specify the total rounds */
+/* the frist loop to print values from 0 to 9*/
+/* and to specify the total rounds */
 /* that the code will run for that will be 98 round */
-/* the frist digit like 0x x will be changable for frist round like 01,02,03 .. and so on*/
+/* the frist digit like 0x x will be changable for frist round*/
+/* like 01,02,03 .. and so on*/
 /* so the increment digit in frist round getting from the scond for loop */
 	for (counter_1 = 0; counter_1 <= 98; counter_1++)
 	{
@@ -21,27 +23,26 @@ int main(void)
 /*repeating the same operation for 97 other round*/
 		for (counter_2 = counter_1 + 1; counter_2 <= 99; counter_2++)
 		{
-/* the frist line is a simple math operation to determin the moduals and division operators*/
 /*the frist line will be always 0 until counter_1 will be greater than 10*/
 			putchar(counter_1 / 10 + '0');
-/*the second line to determin the value of the first digit of pair value */
+/*that line to determin the value of the first digit of pair value */
 			putchar(counter_1 % 10 + '0');
 			putchar(' ');
 /*the frist line will be always 0 until counter_2 will be greater than 10*/
 			putchar(counter_2 / 10 + '0');
-/*the second line to determin the value of the second digit of pair value */
+/*that line to determin the value of the second digit of pair value */
 			putchar(counter_2 % 10 + '0');
-			if (counter_1 == 98 && counter_2 == 99)
-			{
-			    break;
-			}
-				
-			putchar(',');
-			putchar(' ');
-		}
-	}
+/*to stop the programe befefor put (,) and space after last round */
+if (counter_1 == 98 && counter_2 == 99)
+{
+break;
+}
+putchar(',');
+putchar(' ');
+}
+}
 
-	putchar('\n');
+putchar('\n');
 
-	return (0);
+return (0);
 }
