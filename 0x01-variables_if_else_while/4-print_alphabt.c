@@ -12,7 +12,8 @@ int main(void)
 int n;
 for (n = 'a'; n <= 'z'; n++)
 {
-/* ignor both of e and q by using contiue keyword*/
+/* ignor both of e and q by using contiue keyword */
+/* performing next struction*/
 if (n != 'e' && n != 'q')
 {
 putchar(n);
