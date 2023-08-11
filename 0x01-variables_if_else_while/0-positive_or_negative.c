@@ -21,7 +21,7 @@ n = rand() - RAND_MAX / 2;
 /* if condition check n value positive , negative or zero */
 if (n > 0)
 {
-printf("%d  is psitive\n ", n);
+printf("%d is psitive\n ", n);
 }
 else if (n == 0)
 {
