@@ -1,1 +1,1 @@
-if else condition and while loop
+if else condition and for loop
