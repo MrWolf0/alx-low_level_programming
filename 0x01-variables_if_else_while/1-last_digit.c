@@ -26,7 +26,7 @@ reminder = n % 10;
 /* if condition check last digit in n value*/
 if (reminder > 5)
 {
-printf("Last digit of %d is %d and greater than 5", n, reminder);
+printf("Last digit of %d is %d and is greater than 5", n, reminder);
 }
 else if (reminder == 0)
 {
