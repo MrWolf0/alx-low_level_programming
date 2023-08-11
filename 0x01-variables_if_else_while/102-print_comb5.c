@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-/* a nssted for loop program  need 2 counters */
+/* a nested for loop program  need 2 counters */
 	int counter_1, counter_2;
 /* the frist loop to print values from 0 to 9*/
 /* and to specify the total rounds */
