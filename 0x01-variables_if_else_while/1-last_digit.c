@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 /**
  * main - start point of the program
@@ -9,6 +10,8 @@
  */
 int main(void)
 {
+/* declare a new int variable */
+int reminder = 0;
 int n;
  /* to generate a seed value that  rand() based on */
 srand(time(0));
@@ -17,8 +20,7 @@ srand(time(0));
 /* the largest value the rand function can return */
 /* In the GNU C Library, it is 2147483647 */
 n = rand() - RAND_MAX / 2;
-/* declare a new int variable */
-int reminder = 0;
+
 /* using modulus operator % as a reminder */
 reminder = n % 10;
 /* if condition check last digit in n value*/
