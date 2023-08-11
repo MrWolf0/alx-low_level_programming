@@ -9,19 +9,23 @@
 
 int main(void)
 {
-/* a netsed for loop program  need 2 couner */
+/* a netsed for loop program  need 2 counters */
 int counter_1, counter_2;
 /*for that task we don't need to print pair values such 22,33 and so on*/
 /* the frist loop to print values from 0 to 8 */
-/*as like the frist digit like 0x x will be changable for frist round*/
+/*as like the frist digit like 01,02,03,.. and so on*/
+/*the increment value obtained from the second loop*/
 for (counter_1 = '0'; counter_1 < '9'; counter_1++)
 {
-/* the second loop to print the secod digit from 1 to 9 */
-/* as like x1 x getting from frist loop that by increament counter_2 by 1*/
-/* so here the frist value will not be 00 and start from 01*/
+/* the second loop to print the second digit from 1 to 9 */
+/* as like x1,x2,x3..and so on x getting from frist loop */
+/* and its value for frist round is 0*/
+/*but here will print 01 because we increment the first counter_1 by 1*/
+/* and assign the value to be the start of the second counter_2*/
+/*so the frist value we obtained is 0 from frist loop and 1 for the second*/
 for (counter_2 = counter_1 + 1; counter_2 <= '9'; counter_2++)
 {
-/* prevent to repate 2 pair values such as 22,33  so always start with*/
+/* continue keyword to drop 2 pair values such as 22,33  so always start with*/
 /* a unique value in the chain until frist loop rich 8*/
 if (counter_2 != counter_1)
 {
