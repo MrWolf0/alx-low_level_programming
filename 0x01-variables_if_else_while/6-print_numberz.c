@@ -17,8 +17,8 @@ int counter;
 for (counter = '0'; counter <= '9'; counter++)
 {
 putchar(counter);
-putchar('\n');
 }
+putchar('\n');
 	return (0);
 }
 
