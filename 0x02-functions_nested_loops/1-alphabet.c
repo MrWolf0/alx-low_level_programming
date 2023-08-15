@@ -6,7 +6,8 @@
  */
 void print_alphabet(void)
 {
-for (int i = 49; i <= 74; i++)
+int i = 0;
+for (i = 49; i <= 74; i++)
 {
 _putchar(i + '0');
 }
