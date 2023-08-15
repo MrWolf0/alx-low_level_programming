@@ -6,21 +6,21 @@
  *
  *  no need to return keyword
  *
- * calling main.h and compile 2 files together with gcc 
+ * calling main.h and compile 2 files together with gcc
 *the main and the file contain the declaration of putchar function
 */
-int main()
+int main(void)
 {
 /* the text*/
-char text [] = "_putchar";
-int counter =0;
+char text[] = "_putchar";
+int counter = 0;
 /*a loop will iterate string content of the counter != null terminator*/
-while(text[counter] != '\0')
+while (text[counter] != '\0')
 {
 _putchar(text[counter]);
 counter++;
 }
-   _putchar('\n');
-    return 0;
+_putchar('\n');
+return (0);
 }
 
