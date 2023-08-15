@@ -15,7 +15,7 @@ for (row = 0; row <= number; row++)
 for (column = 0; column <= number; column++)
 {
 final_res = row * column;
-if (final_res > 10 && final_res < 100)
+if (final_res > 9 && final_res < 100)
 {
 if (column <= number)
 {
