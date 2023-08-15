@@ -1,50 +1,52 @@
 #include "main.h"
+
 /**
  *print_times_table - print row*column for n times for n column
- * @number : print row*column for 9 times for 9 column
- * Return: Always 0.
+ *@number : print row*column for 9 times for 9 column
+ *Return: Always 0.
  */
 void print_times_table(int number)
 {
-int final_res = 0;
-int row, column;
-if (number <= 15)
-{
-for (row = 0; row <= number; row++)
-{
-for (column = 0; column <= number; column++)
-{
-final_res = row * column;
-if (final_res > 9 && final_res < 100 && column <= number)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(final_res / 10 + '0');
-_putchar(final_res % 10 + '0');
-}
-else if (final_res >= 100 && final_res < 200 && column <= number)
-{
-_putchar(',');
-_putchar(' ');
-_putchar((final_res / 10) / 10 + '0');
-_putchar((final_res / 10) % 10 + '0');
-_putchar(final_res % 10 + '0');
-}
-else
-{
-if (column <= number && column != 0)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-}
-_putchar(final_res + '0');
-}
-}
-_putchar('\n');
-}
-}
-}
+	int final_res = 0;
+	int row, column;
+	if (number <= 15)
+	{
+		for (column = 0; column <= number; column++)
+		{
+			for (row = 0; row <= number; row++)
+			{
+				final_res = row * column;
+				if (final_res > 9 && final_res < 100 && row <= number)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(final_res / 10 + '0');
+					_putchar(final_res % 10 + '0');
+				}
+				else if (final_res >= 100 && final_res < 200 && row <= number)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((final_res / 10) / 10 + '0');
+					_putchar((final_res / 10) % 10 + '0');
+					_putchar(final_res % 10 + '0');
+				}
+				else
+				{
+					if (row <= number && row != 0)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
 
+					_putchar(final_res + '0');
+				}
+			}
+
+			_putchar('\n');
+		}
+	}
+}
