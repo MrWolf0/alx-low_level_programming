@@ -10,8 +10,9 @@
 int main(void)
 {
 	/*long type required because output will be > 65535*/
-	unsigned long sum, per_num, next_num;
+	int long sum, per_num, next_num;
 	int counter;
+
 	next_num = 1;
 	for (counter = 0; counter <= 49; counter++)
 	{
