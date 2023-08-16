@@ -1,15 +1,10 @@
-/*
- * File: 102-fibonacci.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
-
 /**
- * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
- *        separated by a comma followed by a space.
+ *main - start point of the program
  *
- * Return: Always 0.
+ *Return: always must be 0 in case you are using int if you using void
+ *
+ *no need to return keyword
  */
 int main(void)
 {
