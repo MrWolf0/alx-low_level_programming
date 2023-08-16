@@ -18,7 +18,7 @@ void times_table(void)
 		{
 			final_res = column * row;
 			/*number greater than 10 */
-			if (final_res > 9 && row <= = 9)
+			if (final_res > 9 && row <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -28,7 +28,7 @@ void times_table(void)
 
 			/*number less than 10 */
 			else
-			{ 	/*incase the raw =0 the result will always 0*/
+			{ /*incase the raw =0 the result will always 0*/
 				if (row <= 9 && row != 0)
 				{
 					_putchar(',');
