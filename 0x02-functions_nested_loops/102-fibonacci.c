@@ -18,7 +18,7 @@ int main(void)
 	{
 		/*assign sum of per_num and next_num */
 		sum = per_num + next_num;
-		printf("%li", sum);
+		printf("%lu", sum);
 		per_num = next_num;
 		next_num = sum;
 
