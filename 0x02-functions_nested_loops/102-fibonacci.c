@@ -10,17 +10,19 @@ int main(void)
 {
 /*long type required because output will be > 65535*/
 int long sum, per_num, next_num;
-int counter = 0;
+int counter;
 next_num = 1;
-while (counter < 49)
+for (counter = 1; counter < 49; counter++)
 {
-sum = per_num +  next_num;
 printf("%ld, ", sum);
+/*assign sum of per_num and next_num */
+sum = per_num + next_num;
+
 per_num = next_num;
 next_num = sum;
-counter++;
 }
 sum = per_num + next_num;
 printf("%ld\n", sum);
 return (0);
 }
+
