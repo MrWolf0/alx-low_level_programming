@@ -32,6 +32,6 @@ int main(void)
 		next_num = sum;
 	}
 
-	printf("%d", final_res);
+	printf("%d\n", final_res);
 	return (0);
 }
