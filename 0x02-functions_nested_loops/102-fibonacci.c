@@ -10,7 +10,7 @@
 int main(void)
 {
 	/*long type required because output will be > 65535*/
-	int long sum, per_num, next_num;
+	unsigned long sum, per_num, next_num;
 	int counter;
 
 	next_num = 1;
