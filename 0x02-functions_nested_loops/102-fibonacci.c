@@ -1,28 +1,34 @@
+/*
+ * File: 102-fibonacci.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
+
 /**
- * main - start point of the program
+ * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
+ *        separated by a comma followed by a space.
  *
- * Return: always must be 0 in case you are using int if you using void
- *
- *  no need to return keyword
+ * Return: Always 0.
  */
 int main(void)
 {
-/*long type required because output will be > 65535*/
-int long sum, per_num, next_num;
-int counter;
-next_num = 1;
-for (counter = 1; counter < 49; counter++)
-{
-printf("%ld, ", sum);
-/*assign sum of per_num and next_num */
-sum = per_num + next_num;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-per_num = next_num;
-next_num = sum;
-}
-sum = per_num + next_num;
-printf("%ld\n", sum);
-return (0);
-}
+	for (count = 0; count < 50; count++)
+	{
+		sum = fib1 + fib2;
+		printf("%lu", sum);
 
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
+	}
+
+	return (0);
+}
