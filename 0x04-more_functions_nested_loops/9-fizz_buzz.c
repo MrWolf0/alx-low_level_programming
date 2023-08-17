@@ -9,7 +9,10 @@ int main(void)
 {
 	int counter;
 	int multi = 3 * 5;
-
+/* the idea here how i put FizzBuzz because the number we will replace*/
+/*has no remider when divied by 3 or 5 such as 15 % 3 == 15 % 5 = 0*/
+/*so we must check the the remider by multply 3*5 = 15*/
+/*so we check every number by divid it by 15 frist then check later 3 and 5*/
 	for (counter = 1; counter <= 100; counter++)
 	{
 		if (counter % multi == 0)
