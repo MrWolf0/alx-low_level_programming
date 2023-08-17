@@ -13,23 +13,21 @@ int main(void)
 	{
 		if (counter % multi == 0)
 		{
-			printf("FizzBuzz");
+			printf("%s ", "FizzBuzz");
 		}
 		else if (counter % 3 == 0)
 		{
-			printf("Fizz");
+			printf("%s ", "Fizz");
 		}
 		else if (counter % 5 == 0)
 		{
-			printf("Buzz");
+			printf("%s ", "Buzz");
 		}
 		else
 		{
-			printf("%d", counter);
+			printf("%d ", counter);
 		}
-		if (counter == 100)
-			continue;
-		printf(" ");
+		printf("\n");
 	}
 
 	return (0);
