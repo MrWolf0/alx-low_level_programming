@@ -13,19 +13,19 @@ int main(void)
 	{
 		if (counter % multi == 0)
 		{
-			printf("%s ", "FizzBuzz");
+			printf("FizzBuzz");
 		}
 		else if (counter % 3 == 0)
 		{
-			printf("%s ", "Fizz");
+			printf("Fizz");
 		}
 		else if (counter % 5 == 0)
 		{
-			printf("%s ", "Buzz");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", counter);
+			printf("%d", counter);
 		}
 		if (counter == 100)
 			continue;
