@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - print fizz and buzz
-*
- * Return: Always 0.
+ *main - print fizz and buzz
+ *
+ *Return: Always 0.
  */
 int main(void)
 {
@@ -27,10 +28,12 @@ int main(void)
 		{
 			printf("%d", counter);
 		}
+
 		if (counter == 100)
 			break;
 		printf(" ");
 	}
-         printf("\n");
+
+	printf("\n");
 	return (0);
 }
