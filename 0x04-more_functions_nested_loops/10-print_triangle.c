@@ -17,7 +17,8 @@ void print_triangle(int size)
 	if (size > 0)
 	{
 		while (row < size)
-		{ /*here we move from the greater number to the smallest */
+		{
+		/*here we move from the greater number to the smallest */
 			/*starting from the last index putting a space in evey coulm */
 			/*that is vaild until row > coulmn replace the space with #*/
 			for (column = size - 1; column > row; column--)
