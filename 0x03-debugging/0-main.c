@@ -1,15 +1,12 @@
 #include "main.h"
 /**
- * main - start point of the program
- *
- * Return: always must be 0 in case you are using int if you using void
- *
- *  no need to return keyword
+ * main - tests function that prints if integer is positive or negative
+ * Return: 0
  */
 int main(void)
 {
-int n;
-n = 0;
-positive_or_negative(n);
+int i;
+i = 0;
+positive_or_negative(i);
 return (0);
 }
