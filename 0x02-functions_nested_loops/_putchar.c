@@ -1,7 +1,8 @@
 #include<unistd.h>
 /**
- * main - start point of the program
+ * _putchar - a function to act as a builtin putchar() in c
  *
+ *@c : is the input char
  * Return: always must be 0 in case you are using int if you using void
  *
  *  no need to return keyword
@@ -12,6 +13,6 @@
  */
 void _putchar(char c)
 {
- write(1,&c,1);
+write(1, &c, 1);
 }
 
