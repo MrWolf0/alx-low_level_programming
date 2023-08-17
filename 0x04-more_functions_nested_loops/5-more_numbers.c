@@ -18,12 +18,8 @@ void more_numbers(void)
 			if (counter > 9)
 			{
 				_putchar(counter / 10 + '0');
+			}
 				_putchar(counter % 10 + '0');
-			}
-			else
-			{
-				_putchar(counter + '0');
-			}
 		}
 
 		while_counter++;
