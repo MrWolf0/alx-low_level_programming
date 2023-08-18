@@ -18,7 +18,7 @@ void print_diagonal(int n)
 			}
 
 			_putchar('\\');
-			/*stop befor but a new line at the end of loop*/
+			/*stop befor put a new line at the end of loop*/
 			if (times == n - 1)
 			{
 				break;
