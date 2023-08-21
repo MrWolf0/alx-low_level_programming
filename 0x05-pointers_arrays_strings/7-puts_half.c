@@ -20,5 +20,4 @@ for (counter = length / 2; counter <= length; counter++)
 {
 _putchar(str[counter]);
 }
-_putchar('\n');
 }
