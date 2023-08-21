@@ -10,9 +10,10 @@ int _atoi(char *s)
 /*sign_flag is avariable to set when restult is negative*/
 /*sign_flag as SF in EFLAGS */
 /*num to hold the number from a giving string*/
+/*unsigned int is because we have not use long */
 int counter = 0;
 int sign_flag = 1;
-int num = 0;
+unsigned int num = 0;
 /*loop to itrate sting's indices*/
 while (s[counter])
 {
