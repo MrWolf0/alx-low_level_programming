@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stdio.h>
+#include <stdlib.h>  
 /**
  * print_array -print array to stout device.
  *@a:  is a pointer point to the address of current index in a giving array
@@ -9,6 +10,10 @@
 void print_array(int *a, int n)
 {
 int counter = 0;
+if( n < 0)
+{
+exit(0);
+}
 while (a[counter] != '\0')
 {
 printf("%d", a[counter]);
