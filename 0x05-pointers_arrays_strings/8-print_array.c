@@ -9,7 +9,7 @@
 void print_array(int *a, int n)
 {
 int counter = 0;
-while (counter < n)
+while (counter <= n)
 {
 printf("%d", a[counter]);
 counter++;
