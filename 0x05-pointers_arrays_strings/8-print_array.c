@@ -13,9 +13,9 @@ while (counter < n)
 {
 printf("%d", a[counter]);
 counter++;
-if (counter == n )
+if (counter == n)
 {
-continue;
+break;
 }
 printf(", ");
 }
