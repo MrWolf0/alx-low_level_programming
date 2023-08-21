@@ -12,12 +12,21 @@ void puts_half(char *str)
 /*this loop will stop if the current index = null terminator*/
 int counter = 0;
 int length = 0;
+int checker = 0;
 while (str[length] != '\0')
 {
 length++;
 }
 for (counter = length / 2; counter <= length; counter++)
 {
+checker = counter % 2;
+if (checker == 0)
+{
 _putchar(str[counter]);
+}
+else
+{
+_putchar(str[counter]);
+}
 }
 }
