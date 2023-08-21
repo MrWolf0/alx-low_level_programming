@@ -6,13 +6,15 @@
  * @src: string to be copied
  *Return: Always 0.
  */
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, const char *src)
 {
-int counter = 0;
-while (src[counter])
-{
-dest[counter] = src[counter];
-counter++;
-}
-return (dest);
+	int index = 0;
+
+	while (src[index])
+	{
+		dest[index] = src[index];
+		index++;
+	}
+
+	return (dest);
 }
