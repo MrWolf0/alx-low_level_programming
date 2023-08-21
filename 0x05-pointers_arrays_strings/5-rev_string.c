@@ -33,7 +33,7 @@ start++;
 last--;
 }
 
-_putchar('\n');
+
 
 }
 
