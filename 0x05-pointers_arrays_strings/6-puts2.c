@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts -print a giving string to stout device.
+ * puts2 -print a giving string to stout device.
  *@str:  is a pointer point to the address of current index in a giving string
  *Return: Always 0.
  */

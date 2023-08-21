@@ -32,8 +32,5 @@ str[start] = temp;
 start++;
 last--;
 }
-
-
-
 }
 
