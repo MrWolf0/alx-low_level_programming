@@ -17,7 +17,7 @@ while (str[length] != '\0')
 length++;
 }
 reverse_counter = length;
-for (reverse_counter = length-1; reverse_counter >= 0; reverse_counter--)
+for (reverse_counter = length - 1; reverse_counter >= 0; reverse_counter--)
 {
 _putchar(str[reverse_counter]);
 }
