@@ -13,7 +13,7 @@ while (counter < n)
 {
 printf("%d", a[counter]);
 counter++;
-if (counter == n - 1)
+if (counter == n )
 {
 continue;
 }
