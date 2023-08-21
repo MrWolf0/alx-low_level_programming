@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * rev_string -print a giving string in reverse order and change the value 
- * of giving address to the new value 
- *@str:  is a pointer point to the address of current index in a giving string
- *Return: Always 0.
- */
+* rev_string -print a giving string in reverse order and change the value
+* of giving address to the new value
+*@str:  is a pointer point to the address of current index in a giving string
+*Return: Always 0.
+*/
 void rev_string(char *str)
 {
 /*swap the string using 2 counter one start from 0 and second start from*/

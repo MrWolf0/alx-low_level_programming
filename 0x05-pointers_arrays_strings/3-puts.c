@@ -10,7 +10,7 @@ void _puts(char *str)
 /*index by index putting the current index to _putchar function*/
 /*this loop will stop if the current index = null terminator*/
 int counter = 0;
-while (str[counter] !='\0')
+while (str[counter] != '\0')
 {
 _putchar(str[counter]);
 counter++;

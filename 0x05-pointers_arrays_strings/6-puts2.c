@@ -12,10 +12,10 @@ void puts2(char *str)
 /*this loop will stop if the current index = null terminator*/
 int counter = 0;
 int checker = 0;
-while (str[counter] !='\0')
+while (str[counter] != '\0')
 {
 checker = counter % 2;
-if ( checker == 0)
+if (checker == 0)
 {
 _putchar(str[counter]);
 }
