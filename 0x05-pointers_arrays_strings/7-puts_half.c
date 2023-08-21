@@ -6,27 +6,22 @@
  */
 void puts_half(char *str)
 {
-/*impelement a variable act as a curser to move through the string*/
-/*index by index putting the current index to _putchar function*/
-/* start from length/2 index*/
-/*this loop will stop if the current index = null terminator*/
-int counter = 0;
-int length = 0;
-int checker = 0;
-while (str[length] != '\0')
+int index = 0, len = 0, n;
+while (str[index++])
 {
-length++;
+len++;
 }
-if (length % 2 == 0)
+if ((len % 2) == 0)
 {
-checker = length / 2;
+n = len / 2;
 }
 else
 {
-checker = length + 1 / 2;
+n = (len + 1) / 2;
 }
-for (counter = checker; counter <= length; counter++)
+for (index = n; index < len; index++)
 {
-_putchar(str[counter]);
+_putchar(str[index]);
 }
+_putchar('\n');
 }
