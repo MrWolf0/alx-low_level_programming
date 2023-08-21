@@ -17,16 +17,16 @@ while (str[length] != '\0')
 {
 length++;
 }
-for (counter = length / 2; counter <= length; counter++)
+if (length % 2 == 0)
 {
-checker = counter % 2;
-if (checker == 0)
-{
-_putchar(str[counter]);
+checker = length / 2;
 }
 else
 {
-_putchar(str[counter]);
+checker = length + 1 / 2;
 }
+for (counter = checker; counter <= length; counter++)
+{
+_putchar(str[counter]);
 }
 }
