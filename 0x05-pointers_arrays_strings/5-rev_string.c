@@ -24,7 +24,7 @@ length++;
 last = length - 1;
 /*store the value of the last index in temp and swap it to*/
 /*the frist index until index = 4  particulary letter c */
-while (start + 1 < last - 1)
+while (start  < last)
 {
 temp = str[last];
 str[last] = str[start];
