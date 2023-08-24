@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  *_strcat - Concatenates 2 string as src string to dest string
  *@dest: A pointer to the string to be concatenated upon.
@@ -9,15 +9,14 @@
  */
 char *_strcat(char *dest, char *src)
 {
+	/*here we need a temp pointer */
+	/*note that *p here point to the srart of memory location of dest*/
+	char *p = dest;
 	/*checking if both pointer have point to null pointer to avoid app crashing */
 	if ((src == NULL) && (dest == NULL))
 	{
 		return (NULL);
 	}
-
-	/*here we need a temp pointer */
-	/*note that *p here point to the srart of memory location of dest*/
-	char *p = dest;
 	/*loop itrate until reach '\0' checking *p and make sure that*/
 	/*the original pointer isn't null */
 	/*the purpose of that loop is make p reach to the last */
@@ -32,7 +31,7 @@ char *_strcat(char *dest, char *src)
 /*it just change the course that p point on*/
 /* to point the location that src point to*/
 /*and incremet poth by 1 until src finish*/
-	while (*p++ = *src++)
+	while ((*p++ = *src++))
 	;
 /*return the dest with src concatenating together*/
 	return (dest);
