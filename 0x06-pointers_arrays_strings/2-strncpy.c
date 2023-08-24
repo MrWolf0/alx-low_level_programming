@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  *_strncpy - copy a specific number of indexes
  *from string as src string to dest string
@@ -10,12 +10,12 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *p = dest;
+
 	if ((src == NULL) && (dest == NULL))
 	{
 		return (NULL);
 	}
-
-	char *p = dest;
 
 	while (n-- && (*p++ = *src++))
 	;
