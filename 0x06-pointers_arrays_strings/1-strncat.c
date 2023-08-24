@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  *_strncat - Concatenates 2 string as src string to dest string
  *@dest: A pointer to the string to be concatenated upon.
@@ -10,24 +9,17 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	/*for illustration look 0-strcat.c in the repo*/
-	char *p = dest;
-	int x;
-
-	if ((src == NULL) && (dest == NULL))
+	int x=0;
+	int y=0;
+	while (dest[x++])
 	{
-		return (NULL);
-	}
-
-
-	while (p && *p)
-	{
-		++p;
+		++y;
 	}
 
 	/*a loop to stop befor n and append the src index into dest string*/
 	for (x = 0; src[x] && x < n; x++)
 	{
-		*p++ = *src++;
+		dest[y++] = src[x];
 	}
 
 	/*return the dest with src concatenating together*/
