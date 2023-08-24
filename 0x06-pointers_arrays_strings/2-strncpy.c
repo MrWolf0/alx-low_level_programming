@@ -21,3 +21,4 @@ int counter = 0, checker = 0;
 		dest[counter] = '\0';
 
 	return (dest);
+}
