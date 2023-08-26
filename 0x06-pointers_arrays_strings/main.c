@@ -15,46 +15,4 @@ int main(void)
     print_buffer(buffer, sizeof(buffer));
     return (0);
 }
-void print_buffer(char *p, int size)
-{
-	int num_byte, index;
-	for (num_byte = 0; num_byte < size; num_byte += 10)
-	{
-		printf("%08x: ", num_byte);
-		for (index = 0; index < 10; index++)
-		{
-			if ((index + num_byte) >= size)
-			{
-				printf("  ");
-			}
-
-			else
-			{
-				printf("%02x", *(p + index + num_byte));
-			}
-
-			if ((index % 2) != 0 && index != 0)
-			{
-				printf(" ");
-			}
-		}
-	for (index = 0; index < 10; index++)
-		{
-			 if (*(p + index + num_byte) >= 31 && *(p + index + num_byte) <= 126)
-			{
-				printf("%c", *(p + index + num_byte));
-			}
-			else if ((index + num_byte) > size)
-			{
-				printf(".");
-			}
-		}
-
-		printf("\n");
-	}
-
-	if (size <= 0)
-	{
-		printf("\n");
-	}
 }
