@@ -16,7 +16,7 @@ void print_buffer(char *p, int size)
 		printf("%08x: ", num_byte);
 		for (index = 0; index < 10; index++)
 		{
-			if ((index + num_byte) >= size
+			if ((index + num_byte) >= size)
 			{
 				printf("  ");
 			}
