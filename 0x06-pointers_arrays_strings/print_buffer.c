@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_buffer - Prints a buffer 10 bytes at a time, starting with
- *                the byte position, then showing the hex content,
- *                then displaying printable charcaters.
+ *the byte position, then showing the hex content,
+ *then displaying printable charcaters.
  * @p: The buffer to be printed.
  * @size: The number of bytes to be printed from the buffer.
  */
@@ -23,7 +23,7 @@ void print_buffer(char *p, int size)
 /*this loop to itrate 10 characters one by one*/
 		for (index = 0; index < 10; index++)
 		{
-			if ((index + num_byte) >= size
+			if ((index + num_byte) >= size)
 			{
 				printf("  ");
 			}
@@ -46,22 +46,18 @@ void print_buffer(char *p, int size)
 /*we will have 5 coulmns each coulmn start from */
 /*ASCII 32 to 126 ignore all character after escape character \*/
 /*by printing . instated of escape characte */
-/* to avoid buffer overflow just break the loop because */
 /*if you note if byte = 120 and the index 9*/
 /*became 129 > 126 the total size of buffer in memory in bytes*/
-		for (index = 0; index < 10; index++)
+/*and because sizeof () return number of bytes */
+/* here we have 1008 adresses in memory */
+/* what we just used are 129 adresses from 1008*/
+	for (index = 0; index < 10; index++)
 		{
-			if ((index + num_byte) >= size)
-			{
-				break;
-			}
-
-			else if (*(p + index + num_byte) >= 31 && *(p + index + num_byte) <= 126)
+			 if (*(p + index + num_byte) >= 31 && *(p + index + num_byte) <= 126)
 			{
 				printf("%c", *(p + index + num_byte));
 			}
-
-			else
+			else if ((index + num_byte) > size)
 			{
 				printf(".");
 			}
@@ -75,3 +71,4 @@ void print_buffer(char *p, int size)
 		printf("\n");
 	}
 }
+

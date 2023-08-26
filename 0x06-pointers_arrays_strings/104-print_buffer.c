@@ -16,7 +16,7 @@ void print_buffer(char *p, int size)
 		printf("%08x: ", num_byte);
 		for (index = 0; index < 10; index++)
 		{
-			if ((index + num_byte) >= size)
+			if ((index + num_byte) > size)
 			{
 				printf("  ");
 			}
@@ -29,15 +29,13 @@ void print_buffer(char *p, int size)
 				printf(" ");
 			}
 		}
-		for (index = 0; index < 10; index++)
+	for (index = 0; index < 10; index++)
 		{
-			if ((index + num_byte) >= size)
-				break;
-			else if (*(p + index + num_byte) >= 31 && *(p + index + num_byte) <= 126)
+			 if (*(p + index + num_byte) >= 31 && *(p + index + num_byte) <= 126)
 			{
 				printf("%c", *(p + index + num_byte));
 			}
-			else
+			else if ((index + num_byte) > size)
 			{
 				printf(".");
 			}
@@ -49,3 +47,4 @@ void print_buffer(char *p, int size)
 		printf("\n");
 	}
 }
+
