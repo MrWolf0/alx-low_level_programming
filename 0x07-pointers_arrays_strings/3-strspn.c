@@ -16,6 +16,10 @@ unsigned int num = 0;
 /*for accessing main string tb be scanning*/
 	while (*s)
 	{
+	if ((s == NULL) && (accept == NULL))
+	{
+		return (0);
+	}
 /* comaparing each char in accept to mach the main string */
 /* breaking after finish*/
 		for (index = 0; accept[index]; index++)
