@@ -17,13 +17,14 @@ char *_strstr(char *haystack, char *needle)
 	{
 		return (0);
 	}
-
+	if (*needle == 0)
+		return (haystack);
 	/*loop through main string */
 	while (*haystack++)
 	{
 		/*check equality of strings content */
 		if (haystack[index] == needle[index])
-		{ /*only if true this loop will execute*/
+		 /*only if true this loop will execute*/
 			while (haystack[index] == needle[index])
 			{ /*checking end of the needle string*/
 				if (needle[index + 1] == '\0')
@@ -31,7 +32,6 @@ char *_strstr(char *haystack, char *needle)
 					return (haystack);
 				index++;
 			}
-		}
 	}
 
 	/*add null terminator to the end of content of return pointer*/

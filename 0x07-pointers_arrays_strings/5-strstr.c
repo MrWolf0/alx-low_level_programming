@@ -11,18 +11,29 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	int index = 0;
+	/*check null pointer first*/
+	if ((haystack == NULL) && (needle == NULL))
 	{
-		char *temp;
-
-		temp = haystack;
-		while (*needle == *haystack)
-		{
-			haystack++, needle++;
-		}
-		if (*needle == '\0')
-			return (temp);
-		haystack++;
+		return (0);
 	}
-	return (0);
+	if (*needle == 0)
+		return (haystack);
+	/*loop through main string */
+	while (*haystack++)
+	{
+		/*check equality of strings content */
+		if (haystack[index] == needle[index])
+		 /*only if true this loop will execute*/
+			while (haystack[index] == needle[index])
+			{ /*checking end of the needle string*/
+				if (needle[index + 1] == '\0')
+					/*return haystack only if two strings match without '\0'*/
+					return (haystack);
+				index++;
+			}
+	}
+
+	/*add null terminator to the end of content of return pointer*/
+	return ('\0');
 }
