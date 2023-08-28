@@ -9,11 +9,11 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-
+	 char *p = s;
 	while (n--)
 	{
 		/*assing b to the address then increament address*/
-		*s++ = b;
+		*p++ = b;
 	}
 
 	return (s);
