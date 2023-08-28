@@ -11,7 +11,11 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int counter;
-
+	/*check null pointer first*/
+		if ((s == NULL) && (accept == NULL))
+	{
+		return (0);
+	}
 	while (*s)
 	{
 		for (counter = 0; accept[counter]; counter++)

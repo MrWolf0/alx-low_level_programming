@@ -13,13 +13,14 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int num = 0;
 	int index;
-/*for accessing main string tb be scanning*/
-	while (*s)
-	{
-	if ((s == NULL) && (accept == NULL))
+	/*check null pointer first*/
+		if ((s == NULL) && (accept == NULL))
 	{
 		return (0);
 	}
+/*for accessing main string tb be scanning*/
+	while (*s)
+	{
 /* comaparing each char in accept to mach the main string */
 /* breaking after finish*/
 		for (index = 0; accept[index]; index++)
