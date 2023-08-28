@@ -12,14 +12,17 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
+/*Assign 2 pointer to src and dest */
+/*just to make new pointers point to the adresses*/
+/*instead of manipulate memory addresses directly*/
+/*and keep original data */
 	char *p = dest;
 	char *q = src;
-
+/*check null pointer first*/
 	if ((src == NULL) && (dest == NULL))
 	{
 		return (NULL);
 	}
-
 	while (n-- && (*p++ = *q++))
 	;
 	return (dest);
