@@ -17,6 +17,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		return (0);
 	}
+	/*if no content in the string needle*/
 	if (*needle == 0)
 		return (haystack);
 	/*loop through main string */
