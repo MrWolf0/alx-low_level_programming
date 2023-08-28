@@ -24,7 +24,6 @@ char *_strstr(char *haystack, char *needle)
 	while (*haystack++)
 	{
 		/*check equality of strings content */
-		if (haystack[index] == needle[index])
 		 /*only if true this loop will execute*/
 			while (haystack[index] == needle[index])
 			{ /*checking end of the needle string*/
