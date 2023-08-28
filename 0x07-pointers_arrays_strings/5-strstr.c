@@ -1,35 +1,36 @@
 #include "main.h"
+
 /**
- * _strstr - Locates a substring.
- * @haystack: The string to be searched.
- * @needle: The substring to be located.
+ *_strstr - Locates a substring.
+ *@haystack: The string to be searched.
+ *@needle: The substring to be located.
  *
- * Return:a pointer to the first occurrence in haystack specified in needle,
+ *Return:a pointer to the first occurrence in haystack specified in needle,
  *or a null pointer if the sequence is not present in haystack.
  */
 char *_strstr(char *haystack, char *needle)
 {
+	int index = 0;
 	/*check null pointer first*/
-		if ((haystack == NULL) && (needle == NULL))
+	if ((haystack == NULL) && (needle == NULL))
 	{
 		return (0);
 	}
-/* loop to compare main string to located string*/
+
+	/*loop through main string */
 	while (*haystack++)
 	{
-/*The == operator on pointers will compare their content not addresses*/
-		while (*needle == *haystack)
-		{
-/* increment two pointers one address*/
-/*based on loop condition*/
-/*so here we reassign haystack */
-			haystack++;
-			needle++;
+		/*check equality of strings content */
+		/*only if true this loop will execute*/
+		while (haystack[index] == needle[index])
+		{ /*checking end of the needle string*/
+			if (needle[index + 1] == '\0')
+				/*return haystack only if two strings match without '\0'*/
+				return (haystack);
+			index++;
 		}
-/* if needle finish return final haystack */
-		if (*needle == '\0')
-			return (haystack);
 	}
-	return (0);
-}
 
+	/*add null terminator to the end of content of return pointer*/
+	return ('\0');
+}
