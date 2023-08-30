@@ -27,8 +27,4 @@ void _print_rev_recursion(char *s)
 		/*print dereference value of s*/
 		_putchar(*s);
 	}
-
-	/*if we found '\0' put newline*/
-	else
-		_putchar('\n');
 }
