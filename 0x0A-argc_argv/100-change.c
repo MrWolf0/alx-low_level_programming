@@ -21,7 +21,7 @@
 
 	while (cent > 0)
 	{
-		coins++;
+		coin++;
 		if ((cent - 25) >= 0)
 		{
 			cent -= 25;
