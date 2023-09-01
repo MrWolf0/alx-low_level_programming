@@ -7,7 +7,7 @@
  *
  * Return: Always o.
  */
- int main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int cent, coin = 0;
 
