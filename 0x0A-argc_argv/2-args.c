@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 /**
- * main - prints the program name, followed by a new line.
+ * main - prints all arguments it receives.
  * @argc:  number of arguments supplied to the program.
  * @argv: array of pointers to the arguments.
  *
- * Return: Always o.
+ * Return: Always 0.
  */
- int main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int arg;
 
