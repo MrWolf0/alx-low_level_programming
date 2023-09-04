@@ -18,7 +18,7 @@ char *_strdup(char *str)
 
 	for (index = 0; str[index]; index++)
 		len++;
-
+/*assign amout of addreses + 1 to null terminator*/
 	p = malloc(sizeof(char) * (len + 1));
 
 	if (p == 0)
