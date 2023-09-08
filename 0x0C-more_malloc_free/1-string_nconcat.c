@@ -14,8 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *concat;
 /*make the new length equal to the length of s2*/
 /*then add the length of s1 to the new length*/
-	unsigned int len = n;
-	int index_1, index_2;
+	unsigned int len = n, index_1, index_2;
 
 	if (s1 == NULL)
 	{

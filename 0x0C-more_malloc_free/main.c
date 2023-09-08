@@ -3,20 +3,16 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for ALX School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
-int main(int ac, char *av[])
+int main(void)
 {
-    char *s;
+    char *concat;
 
-    s = argstostr(ac, av);
-    if (s == NULL)
-    {
-        return (1);
-    }
-    printf("%s", s);
-    free(s);
+    concat = string_nconcat("Best ", "School !!!", 6);
+    printf("%s\n", concat);
+    free(concat);
     return (0);
 }
