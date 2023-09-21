@@ -1,11 +1,11 @@
 /*
- ============================================================================
- Name        : Linked_list.c
- Author      : Mr Wolf
- Version     :
- Copyright   :
- Description : print a a linked_list
- ============================================================================
+* ============================================================================
+ *Name        : Linked_list.c
+ *Author      : Mr Wolf
+ *Version     :
+ *Copyright   :
+ *Description : print a a linked_list
+ *============================================================================
  */
 #include "lists.h"
 #include <stdio.h>
@@ -22,14 +22,14 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		if (h->str == NULL)
-		    {
+		{
 			printf("[0] (nil)\n");
-		    }
+		}
 		else
-		    {
+		{
 		    /*len is the data and str the next add of next data*/
 			printf("[%d] %s\n", h->len, h->str);
-		    }
+		}
 
 		nodes++;
 		h = h->next;

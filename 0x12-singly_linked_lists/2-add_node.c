@@ -1,11 +1,11 @@
 /*
- ============================================================================
- Name        : Linked_list.c
- Author      : Mr Wolf
- Version     :
- Copyright   :
- Description : add a new node at the beginning of a linked_list
- ============================================================================
+* ============================================================================
+ *Name        : Linked_list.c
+ *Author      : Mr Wolf
+ *Version     :
+ *Copyright   :
+ *Description : print a a linked_list
+ *============================================================================
  */
 #include "lists.h"
 #include <stdlib.h>
@@ -20,22 +20,25 @@
  */
 
 list_t *add_node(list_t **head, const char *str)
-    {
+{
 	list_t *new_node;
+
 	int len = 0;
+
 	new_node = malloc(sizeof(list_t));
-	while(str[len])
-	    {
+
+	while (str[len])
+	{
 		len++;
 
-	    }
-	if(!new_node)
-	    {
+	}
+	if (!new_node)
+	{
 		return (NULL);
-	    }
+	}
 	new_node->str = strdup(str);
 	new_node->len = len;
 	new_node->next = *head;
 	*head = new_node;
-	return(new_node);
-    }
+	return (new_node);
+}
