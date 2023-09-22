@@ -4,7 +4,7 @@
  *Author      : Mr Wolf
  *Version     :
  *Copyright   : GNU
- *Description : read README file for more info
+ *Description : Hello World in C, Ansi-style
  *============================================================================
  */
 #include"main.h"
@@ -24,29 +24,24 @@ int calculate_length(char *s);
 char *str_concat(char *s1, char *s2)
 {
 	char *new_string;
-
-	int frist_length, counter = 0, second_lengh, total_amount_mem = 0;
-
+	int frist_length, counter = 0, secon_lengh, total_amount_mem = 0;
 	frist_length = calculate_length(s1);
-
-	second_lengh = calculate_length(s2);
-
-	total_amount_mem = frist_length + second_lengh;
-
-	new_string = malloc(sizeof(char) * total_amount_mem);
-
+	secon_lengh = calculate_length(s2);
+	total_amount_mem = frist_length + secon_lengh;
+	new_string = malloc(sizeof(char) *total_amount_mem);
 	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	else if (s2 == NULL)
+	 if (s2 == NULL)
 	{
 		s2 = "";
 	}
-	else if (s1 == NULL && s2 == NULL)
-	  {
-	    return (NULL);
-	  }
+	if (new_string == NULL)
+	{
+		return (NULL);
+	}
+
 	for (counter = 0; s1[counter]; counter++)
 	{
 		new_string[counter] = s1[counter];
@@ -69,7 +64,6 @@ char *str_concat(char *s1, char *s2)
 int calculate_length(char *s)
 {
 	int counter, length;
-
 	if (!s)
 	{
 		return (0);
