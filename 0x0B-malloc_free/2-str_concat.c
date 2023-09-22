@@ -43,7 +43,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-
+	else if (s1 == NULL && s2 == NULL)
+	  {
+	    return (NULL);
+	  }
 	for (counter = 0; s1[counter]; counter++)
 	{
 		new_string[counter] = s1[counter];
