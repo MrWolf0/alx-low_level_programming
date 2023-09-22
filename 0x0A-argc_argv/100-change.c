@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int cent, coin = 0;
-
+/*checkig umber of arguments such as args < 2*/
 	if (argc != 2)
 	{
 		printf("Error\n");
