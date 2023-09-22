@@ -27,7 +27,7 @@ working in the C language. The specific list of projects contained follows:
 
 ## Author :black_nib:
 
-* __Brennan D Baraban__ <[bdbaraban](https://github.com/bdbaraban)>
+* __MrWolf0__ <[MrWolf0](https://github.com/MrWolf0)>
 
 ## Acknowledgements :pray:
 
