@@ -10,24 +10,32 @@
  */
 char *_strdup(char *str)
 {
-	char *p;
-	int index, len = 0;
-
-	if (str == 0)
-		return (0);
-
-	for (index = 0; str[index]; index++)
-		len++;
-/*assign amout of addreses + 1 to null terminator*/
-	p = malloc(sizeof(char) * (len + 1));
-
-	if (p == 0)
-		return (0);
-
-	for (index = 0; str[index]; index++)
-		p[index] = str[index];
-
-	p[len] = '\0';
-
-	return (p);
+	char *temp;
+	int new_length = 0,counter;
+/*check if string is empy*/
+	if (!str)
+	{
+		return(NULL);
+	}
+/*calculate the length of str*/
+	for (counter = 0; counter < str[counter]; counter++)
+	{
+		new_length++;
+	}
+/*assigin memory without null operator so we add +1 to the new size */
+/*to put in cosideration null opertator*/
+	temp = malloc(sizeof(char)* (new_length+1));
+	if (!temp)
+	{
+		return (NULL);
+	}
+/*loop to make a copy from str in temp */
+	for (counter = 0; counter < str[counter]; counter++)
+	{
+		temp[counter] = str[counter];
+	}
+/*finally add null operator to the end of temp */
+	temp['\0'];
+	return (temp);
 }
+
