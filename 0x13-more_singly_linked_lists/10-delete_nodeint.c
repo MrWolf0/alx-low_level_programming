@@ -1,10 +1,10 @@
-/**
+/*
  * ============================================================================
  * Project     : 0x13-more_singly_linked_lists.c
  * Author      : MrWolf
  * Version     :
  * Copyright   : GNU
- * Description : a function that deletes the node at index index of a listint_t linked list.
+ * Description : a function that deletes the node at index index of a listint_t
  * ============================================================================
  *
  *

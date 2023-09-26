@@ -1,10 +1,10 @@
-/**
+/*
  * ============================================================================
  * Project     : 0x13-more_singly_linked_lists.c
  * Author      : MrWolf
  * Version     :
  * Copyright   : GNU
- * Description : a function that returns the nth node of a listint_t linked list.
+ * Description : a function that returns the nth node of a listint_t .
  * ============================================================================
  *
  *

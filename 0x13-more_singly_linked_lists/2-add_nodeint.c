@@ -1,4 +1,4 @@
-/**
+/*
  * ============================================================================
  * Project     : 0x13-more_singly_linked_lists.c
  * Author      : MrWolf
@@ -28,8 +28,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 /*after that we need to store the address of that pointer*/
 /*because in linkedlist the memory accessed randomly not continuously*/
 /*so second pointer is point to address not a value while the first*/
-/*point to a value so **head is contain 2 values the address point to the first value*/
-/*in linkedlist and the address that used by a pointer to point to the first address*/
+/*point to a value so **head is contain 2 values the address*/
+/* point to the first value*/
+/*in linkedlist and the address that used by a pointer to point to */
+/*the first address*/
 	listint_t *new;
 
 /*assign memory allocation to the new node */

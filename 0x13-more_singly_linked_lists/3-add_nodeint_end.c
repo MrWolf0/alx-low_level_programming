@@ -1,4 +1,4 @@
-/**
+/*
  * ============================================================================
  * Project     : 0x13-more_singly_linked_lists.c
  * Author      : MrWolf
@@ -45,7 +45,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 /*by shifting the node one by one*/
 		else
 		{
-/*assign the second pointer of double pointer which point to address not value*/
+/*assign the second pointer of double pointer which*/
+/* point to address not value*/
 /* which mean the address that point to the first node we will assign*/
 			/*to the last node*/
 			last = *head;
