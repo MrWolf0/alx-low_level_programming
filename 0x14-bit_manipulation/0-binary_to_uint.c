@@ -40,11 +40,11 @@ unsigned int binary_to_uint(const char *b)
 		length++;
 	}
 
-	/*accessing our string from the last index in descending order*/
-	/*note that we must start from index 0 but stop before the last index*/
-	/*assume that we have a string with 3 indices length is 3*/
-	/*start from 1,2 and 3 so we need access index 0*/
-	/*to do that use length-1*/
+/*accessing our string from the last index in descending order*/
+/*note that we must start from index 0 but stop before the last index*/
+/*assume that we have a string with 3 indices length is 3*/
+/*start from 1,2 and 3 so we need access index 0*/
+/*to do that use length-1*/
 	for (index = length - 1; index >= 0; index--)
 	{
 /*here its important to specify where ones in the string*/
