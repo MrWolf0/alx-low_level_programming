@@ -3,11 +3,11 @@
 In this project, I learned how to manipulate bits and use the
 bitwise operators `>>`, `<<`, `&`, `|`, and `^` in C.
 
-## Helper File :raised_hands:
+## Helper File:
 
 * [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
-## Header File :file_folder:
+## Header File:
 
 * [main.h](./main.h): Header file containing prototypes for all
 functions written in the project.
