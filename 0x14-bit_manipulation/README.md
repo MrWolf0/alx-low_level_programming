@@ -3,17 +3,13 @@
 In this project, I learned how to manipulate bits and use the
 bitwise operators `>>`, `<<`, `&`, `|`, and `^` in C.
 
-## Tests :heavy_check_mark:
-
-* [tests](./tests): Folder of test files. Provided by Holberton School.
-
 ## Helper File :raised_hands:
 
 * [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
 ## Header File :file_folder:
 
-* [holberton.h](./holberton.h): Header file containing prototypes for all
+* [main.h](./main.h): Header file containing prototypes for all
 functions written in the project.
 
 | File                   | Prototype                                                           |
@@ -24,7 +20,6 @@ functions written in the project.
 | `3-set_bit.c`          | `int set_bit(unsigned long int *n, unsigned int index);`            |
 | `4-clear_bit.c`        | `int clear_bit(unsigned long int *n, unsigned int index);`          |
 | `5-flip_bits.c`        | `unsigned int flip_bits(unsigned long int n, unsigned long int m);` |
-| `100-get_endianness.c` | `int get_endianness(void);`                                         |
 
 ## Tasks :page_with_curl:
 
@@ -63,11 +58,3 @@ functions written in the project.
   * [5-flip_bits.c](./5-flip_bits.c): C function that returns the number of bits needed
   to be flipped to get from one number to another.
 
-* **6. Endianness**
-  * [100-get_endianness.c](./100-get_endianness.c): C function that checks the endianness.
-  * If big-endian - returns `0`.
-  * If little-endian - returns `1`.
-
-* **7. Crackme3**
-  * [101-password](./101-password): File containing the password for the
-  [crackme3](https://github.com/holbertonschool/0x13.c) executable.
