@@ -20,7 +20,7 @@ void close_file(int fd);
  *
  * Return: A pointer to the newly-allocated buffer.
  */
-char *create_buffer(char *file)
+char *allocate_memory(char *file)
 {
 	char *buffer;
 
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	buffer = create_buffer(argv[2]);
+	buffer = allocate_memory(argv[2]);
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
