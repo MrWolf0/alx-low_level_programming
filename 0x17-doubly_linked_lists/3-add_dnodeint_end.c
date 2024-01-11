@@ -13,7 +13,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	dlistint_t *new_node;
 	dlistint_t *last_node;
 
-	last_node = malloc(sizeof(dlistint_t));
+	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 	{
 		printf("%s", "Invalid memory allocation");
@@ -35,3 +35,4 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		last_node->next = new_node;
 		new_node->prev = last_node;
 		return (new_node);
+	}
