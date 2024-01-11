@@ -12,7 +12,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (new_node == NULL)
 	{
-		dprintf(2, "Error: Can't malloc");
+		printf(2, "Error: Can't malloc");
 		return (NULL);
 	}
 	else
