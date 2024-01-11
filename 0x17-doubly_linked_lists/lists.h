@@ -9,6 +9,7 @@
 #define LISTS_H_
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 typedef struct dlistint
 {
 int data;
