@@ -14,7 +14,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	last_node = malloc(sizeof(dlistint_t));
 	new_node = malloc(sizeof(dlistint_t));
-	if (new_node == NULL || last_node == NULL)
+	if (new_node == NULL)
 	{
 		printf("%s", "Invalid memory allocation");
 		return (NULL);
